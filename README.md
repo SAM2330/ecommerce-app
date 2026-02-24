@@ -49,7 +49,9 @@ Open the URL printed in the terminal (usually http://localhost:5173) in your web
 src/
  Main files
 src/App.jsx – Main app layout (navbar, product list, cart)
+
 src/Context/CardContext.jsx – Cart state and logic
+
 src/Components/Navbar.jsx – Header with cart item count
 src/Components/ProductList.jsx – Fetches and lists products
 src/Components/ProductCard.jsx – Individual product card
