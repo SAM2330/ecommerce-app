@@ -47,12 +47,11 @@ npm run dev
 
 Open the URL printed in the terminal (usually http://localhost:5173) in your web browser.
 src/
- ├── App.jsx             # Main app layout and component composition
- ├── context/
- │     └── CartContext.jsx  # Cart context (state, add, remove, increment, decrement)
- ├── components/
- │     ├── Navbar.jsx      # Header showing cart item count
- │     ├── ProductList.jsx # Fetches and lists products
- │     ├── ProductCard.jsx # Individual product card
- │     └── Cart.jsx        # Cart UI and totals
- └── index.css            # Global styles
+ Main files
+src/App.jsx – Main app layout (navbar, product list, cart)
+src/Context/CardContext.jsx – Cart state and logic
+src/Components/Navbar.jsx – Header with cart item count
+src/Components/ProductList.jsx – Fetches and lists products
+src/Components/ProductCard.jsx – Individual product card
+src/Components/Cart.jsx – Cart UI and totals
+src/index.css – Global styles
