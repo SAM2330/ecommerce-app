@@ -1,37 +1,47 @@
 ## React E-commerce Store
 
-A simple e-commerce front-end built with React that:
+A simple e-commerce front-end built with React that showcases products from a public API and lets users manage a shopping cart with live totals.
+
+### Features
 
 - Fetches products from `https://fakestoreapi.com`
-- Lets users add items to a cart
-- Shows a running cart total with quantity controls
-- Uses React Context for global cart state
+- Displays products in a responsive grid with images, titles, and prices
+- Adds products to a global shopping cart using React Context
+- Shows total number of items in the cart in the navbar
+- Cart view with:
+  - Per-item quantity
+  - `+` / `–` quantity controls
+  - Per-item subtotal and overall total
+  - Remove item button
+- Basic loading state and error message when fetching products
 
-### Tech stack
+### Tech Stack
 
-- React
-- Vite (bundler/dev server)
+- **React**
+- **Vite** (build tool and dev server)
+- **JavaScript** with functional components and hooks
+- **Context API** for global cart state
+- **CSS** (centralized in `src/index.css`)
 
-### Running the project
+### Getting Started
 
-```bash
+1. Install dependencies:
+
+   bash
 npm install
+
+2. Start the development server:
+bash
 npm run dev
-```
 
-# React + Vite
+3. Open the URL printed in the terminal (usually `http://localhost:5173`) in your browser.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Project Structure
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/App.jsx` – Main app layout and composition of navbar, product list, and cart
+- `src/Context/CardContext.jsx` – Cart context (state, add, remove, increment, decrement)
+- `src/Components/Navbar.jsx` – Header showing cart item count
+- `src/Components/ProductList.jsx` – Fetches and lists products
+- `src/Components/ProductCard.jsx` – Individual product card
+- `src/Components/Cart.jsx` – Cart UI and totals
+- `src/index.css` – Global styles and component classes
